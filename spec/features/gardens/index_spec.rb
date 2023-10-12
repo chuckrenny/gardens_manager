@@ -1,10 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe 'Gardens Index' do
+RSpec.describe Garden, type: :feature do
   before :each do
-    @garden1 = Garden.create!(name: "Eden", species: 500, watered: true)
-    @garden2 = Garden.create!(name: "Olympus", species: 300, watered: true)
-    @garden3 = Garden.create!(name: "Butterfly", species: 100, watered: false)
+    load_test_data
   end
 
   # US 1
@@ -15,4 +13,7 @@ RSpec.describe 'Gardens Index' do
     expect(page).to have_content(@garden2.name)
     expect(page).to have_content(@garden3.name)
   end
+
+  # US 2
+  it displa
 end

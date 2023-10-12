@@ -23,7 +23,7 @@ Things you may want to cover:
 
 Iteration 1
 CRUD
-[ ] done
+[] done
 
 User Story 1, Garden Index 
 
@@ -31,7 +31,7 @@ For each Garden table
 As a visitor
 When I visit '/gardens'
 Then I see the name of each Garden record in the system
-[ ] done
+[x] done
 
 User Story 2, Garden Show 
 
