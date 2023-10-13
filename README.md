@@ -52,15 +52,15 @@ Then I see each Plant in the system including the Plant's attributes
 User Story 4, Plant Show 
 
 As a visitor
-When I visit '/plant_table_name/:id'
+When I visit '/plants/:id'
 Then I see the plant with that id including the plant's attributes
 (data from each column that is on the plant table)
-[ ] done
+[x] done
 
-User Story 5, Garden Plantren Index 
+User Story 5, Garden Plant Index 
 
 As a visitor
-When I visit '/Gardens/:Garden_id/plant_table_name'
+When I visit '/Gardens/:Garden_id/plants'
 Then I see each Plant that is associated with that Garden with each Plant's attributes
 (data from each column that is on the plant table)
 

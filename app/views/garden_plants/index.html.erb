@@ -1,0 +1,10 @@
+<h1><%= @garden.name %> Garden</h1>
+
+<h3>All Plants</h3>
+<% @plants.each do |plant| %>
+    <li class="plant-item">
+      <p class="plant-name"><%= plant.name %></p>
+      <p><strong>Height(inches):</strong> <%= plant.height %></p>
+      <p><strong>Flowering:</strong> <%= plant.flowering %></p>
+    </li>
+<% end %>
