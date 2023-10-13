@@ -44,10 +44,10 @@ Then I see the Garden with that id including the Garden's attributes
 User Story 3, Plant Index 
 
 As a visitor
-When I visit '/plant_table_name'
+When I visit '/plants'
 Then I see each Plant in the system including the Plant's attributes
 (data from each column that is on the plant table)
-[ ] done
+[x] done
 
 User Story 4, Plant Show 
 
