@@ -39,7 +39,7 @@ As a visitor
 When I visit '/Gardens/:id'
 Then I see the Garden with that id including the Garden's attributes
 (data from each column that is on the Garden table)
-[ ] done
+[x] done
 
 User Story 3, Plant Index 
 
@@ -63,6 +63,7 @@ As a visitor
 When I visit '/Gardens/:Garden_id/plant_table_name'
 Then I see each Plant that is associated with that Garden with each Plant's attributes
 (data from each column that is on the plant table)
+
 ActiveRecord
 [ ] done
 
@@ -79,6 +80,7 @@ User Story 7, Garden Plant Count
 As a visitor
 When I visit a Garden's show page
 I see a count of the number of plantren associated with this Garden
+
 Usability
 [ ] done
 
@@ -101,6 +103,7 @@ User Story 10, Garden Plant Index Link
 As a visitor
 When I visit a Garden show page ('/Gardens/:id')
 Then I see a link to take me to that Garden's `plant_table_name` page ('/Gardens/:id/plant_table_name')
+
 Iteration 2
 CRUD
 [ ] done
@@ -158,6 +161,7 @@ When I click the button to submit the form "Update Plant"
 Then a `PATCH` request is sent to '/plant_table_name/:id',
 the plant's data is updated,
 and I am redirected to the Plant Show page where I see the Plant's updated information
+
 ActiveRecord
 [ ] done
 
@@ -175,6 +179,7 @@ When I visit the Garden's plantren Index Page
 Then I see a link to sort plantren in alphabetical order
 When I click on the link
 I'm taken back to the Garden's plantren Index Page where I see all of the Garden's plantren in alphabetical order
+
 Usability
 [ ] done
 
@@ -194,6 +199,7 @@ When I visit the `plant_table_name` index page or a Garden `plant_table_name` in
 Next to every plant, I see a link to edit that plant's info
 When I click the link
 I should be taken to that `plant_table_name` edit page where I can update its information just like in User Story 14
+
 Iteration 3
 CRUD
 [ ] done

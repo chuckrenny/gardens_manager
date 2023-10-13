@@ -1,5 +1,8 @@
 <h1>All Gardens</h1>
 
-<% @gardens.each do |garden| %>
-  <p><%= garden.name %></p>
-<% end %>
+<ul>
+  <% @gardens.each do |garden| %>
+    <p class="garden-name"><%= garden.name %></p>
+    </li>
+  <% end %>
+</ul>

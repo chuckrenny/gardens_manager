@@ -13,7 +13,4 @@ RSpec.describe Garden, type: :feature do
     expect(page).to have_content(@garden2.name)
     expect(page).to have_content(@garden3.name)
   end
-
-  # US 2
-  it displa
 end

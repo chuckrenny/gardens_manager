@@ -14,9 +14,3 @@ RSpec.describe Garden, type: :feature do
     expect(page).to have_content("Recently Watered: #{@garden1.watered}")
   end
 end
-
-# User Story 2, Garden Show 
-
-# Then I see the Garden with that id including the Garden's attributes
-# (data from each column that is on the Garden table)
-# [ ] done
