@@ -65,7 +65,7 @@ Then I see each Plant that is associated with that Garden with each Plant's attr
 (data from each column that is on the plant table)
 
 ActiveRecord
-[ ] done
+[x] done
 
 User Story 6, Garden Index sorted by Most Recently Created 
 
@@ -79,7 +79,7 @@ User Story 7, Garden Plant Count
 
 As a visitor
 When I visit a Garden's show page
-I see a count of the number of plantren associated with this Garden
+I see a count of the number of plants associated with this Garden
 
 Usability
 [ ] done

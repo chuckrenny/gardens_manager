@@ -13,4 +13,11 @@ RSpec.describe Garden, type: :feature do
     expect(page).to have_content("Total Species: #{@garden1.species}")
     expect(page).to have_content("Recently Watered: #{@garden1.watered}")
   end
+
+  # US 7
+  it "displays the number of plants associated with the specific garden ID" do
+    visit "/gardens/#{@garden1.id}"
+
+    expect(page).to have_content("Total Associated Plants: #{@garden1.associated_plants}")
+  end
 end

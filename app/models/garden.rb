@@ -8,4 +8,8 @@ class Garden < ApplicationRecord
   def self.recently_created
     order(created_at: :desc)
   end
+
+  def associated_plants
+    self.plants.count
+  end
 end
