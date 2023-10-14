@@ -3,6 +3,7 @@
 <ul>
   <% @gardens.each do |garden| %>
     <p class="garden-name"><%= garden.name %></p>
+    <small>Created at: <%= garden.created_at %></small><br>
     </li>
   <% end %>
 </ul>

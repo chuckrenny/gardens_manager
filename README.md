@@ -23,7 +23,7 @@ Things you may want to cover:
 
 Iteration 1
 CRUD
-[] done
+[x] done
 
 User Story 1, Garden Index 
 
