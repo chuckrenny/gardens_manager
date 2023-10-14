@@ -18,4 +18,15 @@ RSpec.describe Plant, type: :feature do
     expect(page).to have_content(@plant5.name)
     expect(page).to have_content(@plant6.name)
   end
+
+  # US 9
+  it "displays a link header and when clicked it redirects to the Gardens Index Page" do
+    visit "/plants" 
+
+    expect(page).to have_link("Gardens Index")
+
+    click_link("Gardens Index")
+
+    expect(current_path).to eq("/gardens")
+  end
 end

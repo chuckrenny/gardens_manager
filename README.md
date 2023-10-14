@@ -82,7 +82,7 @@ When I visit a Garden's show page
 I see a count of the number of plants associated with this Garden
 
 Usability
-[ ] done
+[x] done
 
 User Story 8, Plant Index Link
 

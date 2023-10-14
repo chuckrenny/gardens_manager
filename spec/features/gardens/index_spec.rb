@@ -27,14 +27,13 @@ RSpec.describe Garden, type: :feature do
 
   
   # US 8
-  it "displays a link at header and when clicked it redirects to the Plants Index Page" do 
+  it "displays a link header and when clicked it redirects to the Plants Index Page" do 
     visit "/gardens"
 
     expect(page).to have_link("Plants Index")
 
-    click_link "Plants Index"
+    click_link("Plants Index")
 
     expect(current_path).to eq("/plants")
-    save_and_open_page
   end
 end
