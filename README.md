@@ -89,7 +89,7 @@ User Story 8, Plant Index Link
 As a visitor
 When I visit any page on the site
 Then I see a link at the top of the page that takes me to the Plant Index
-[ ] done
+[x] done
 
 User Story 9, Garden Index Link
 
@@ -102,7 +102,7 @@ User Story 10, Garden Plant Index Link
 
 As a visitor
 When I visit a Garden show page ('/Gardens/:id')
-Then I see a link to take me to that Garden's `plant_table_name` page ('/Gardens/:id/plant_table_name')
+Then I see a link to take me to that Garden's `plants` page ('/Gardens/:id/plants')
 
 Iteration 2
 CRUD

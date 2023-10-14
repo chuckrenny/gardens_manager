@@ -20,4 +20,17 @@ RSpec.describe Garden, type: :feature do
 
     expect(page).to have_content("Total Associated Plants: #{@garden1.associated_plants}")
   end
+
+  # US 10
+  it "displays a link to redirect to the specific garden's plants page" do
+    visit "/gardens/#{@garden1.id}"
+
+    expect(page).to have_link("#{@garden1.name}'s Plants Show Page")
+
+    click_link("#{@garden1.name}'s Plants Show Page")
+
+    expect(current_path).to eq("/gardens/#{@garden1.id}/plants")
+    expect(page).to have_content("#{@garden1.name} Garden")
+    expect(page).to have_content("All Plants")
+  end
 end
