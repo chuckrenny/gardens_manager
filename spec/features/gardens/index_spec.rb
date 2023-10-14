@@ -24,4 +24,17 @@ RSpec.describe Garden, type: :feature do
     expect(@garden2.name).to appear_before(@garden1.name)
     expect(@garden1.name).to_not appear_before(@garden4.name)
   end
+
+  
+  # US 8
+  it "displays a link at header and when clicked it redirects to the Plants Index Page" do 
+    visit "/gardens"
+
+    expect(page).to have_link("Plants Index")
+
+    click_link "Plants Index"
+
+    expect(current_path).to eq("/plants")
+    save_and_open_page
+  end
 end

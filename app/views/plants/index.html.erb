@@ -3,9 +3,9 @@
 <ul>
   <% @plants.each do |plant| %>
     <li class="plant-item">
-      <p class="plant-name"><%= plant.name %></p>
-      <p><strong>Height:</strong> <%= plant.height %></p>
-      <p><strong>Flowering:</strong> <%= plant.flowering %></p>
+      <h3 class="plant-name"><%= plant.name %></h3>
+      <p>Height: <%= plant.height %></p>
+      <p>Flowering: <%= plant.flowering %></p>
     </li>
   <% end %>
 </ul>

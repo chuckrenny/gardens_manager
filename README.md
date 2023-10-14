@@ -73,7 +73,7 @@ As a visitor
 When I visit the Garden index,
 I see that records are ordered by most recently created first
 And next to each of the records I see when it was created
-[ ] done
+[x] done
 
 User Story 7, Garden Plant Count
 
