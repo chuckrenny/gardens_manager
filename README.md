@@ -106,7 +106,7 @@ Then I see a link to take me to that Garden's `plants` page ('/Gardens/:id/plant
 
 Iteration 2
 CRUD
-[ ] done
+[x] done
 
 User Story 11, Garden Creation 
 
