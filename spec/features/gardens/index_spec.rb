@@ -36,4 +36,25 @@ RSpec.describe Garden, type: :feature do
 
     expect(current_path).to eq("/plants")
   end
+
+  # US 11
+  it "displays a link to create a new Garden record called 'New Garden' and redirects to a form to create a new Garden" do
+    visit "/gardens"
+
+    expect(page).to have_link("New Garden")
+
+    click_link("New Garden")
+
+    expect(current_path).to eq("/gardens/new")
+    expect(page).to have_content("Create a New Garden")
+
+    fill_in 'Name', with: 'Babylon'
+    fill_in 'Species', with: 1000
+    check 'Watered'
+
+    click_on 'Submit'
+
+    expect(current_path).to eq("/gardens")
+    expect(page).to have_content('Babylon')
+  end
 end
