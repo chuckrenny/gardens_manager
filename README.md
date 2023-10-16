@@ -134,7 +134,7 @@ And I click the button to submit the form
 Then a `PATCH` request is sent to '/Gardens/:id',
 the Garden's info is updated,
 and I am redirected to the Garden's Show page where I see the Garden's updated info
-[ ] done
+[x] done
 
 User Story 13, Garden Plant Creation 
 
