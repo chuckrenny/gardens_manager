@@ -170,15 +170,15 @@ User Story 15, Plant Index only shows `true` Records
 As a visitor
 When I visit the plant index
 Then I only see records where the boolean column is `true`
-[ ] done
+[x] done
 
-User Story 16, Sort Garden's Plantren in Alphabetical Order by name 
+User Story 16, Sort Garden's Plants in Alphabetical Order by name 
 
 As a visitor
-When I visit the Garden's plantren Index Page
-Then I see a link to sort plantren in alphabetical order
+When I visit the Garden's plants Index Page
+Then I see a link to sort plants in alphabetical order
 When I click on the link
-I'm taken back to the Garden's plantren Index Page where I see all of the Garden's plantren in alphabetical order
+I'm taken back to the Garden's plants Index Page where I see all of the Garden's plants in alphabetical order
 
 Usability
 [ ] done

@@ -6,7 +6,7 @@ class Garden < ApplicationRecord
   validates_inclusion_of :watered, in: [true, false]
 
   def self.recently_created
-    order(created_at: :desc)
+    order("created_at DESC")
   end
 
   def associated_plants

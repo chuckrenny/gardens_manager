@@ -9,9 +9,10 @@ RSpec.describe Plant, type: :feature do
   it "displays each plant and its attributes in the system" do
     visit "/plants"
 
+    expect(page).to have_content(@plant1.name)
+    expect(page).to have_content(@plant1.height)
+    expect(page).to have_content(@plant1.flowering)
     expect(page).to have_content(@plant2.name)
-    expect(page).to have_content(@plant2.height)
-    expect(page).to have_content(@plant2.flowering)
     expect(page).to have_content(@plant3.name)
     expect(page).to have_content(@plant4.name)
   end

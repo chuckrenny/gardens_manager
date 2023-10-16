@@ -31,4 +31,14 @@ RSpec.describe 'Garden Plants Index' do
 
     expect(current_path).to eq("/gardens/#{@garden1.id}/plants/new")
   end
+
+  # US 16
+  it "displays a link- when clicked it sorts plants in alphabetical order" do
+    visit "/gardens/#{@garden1.id}/plants"
+
+    expect(page).to have_link("Sort Alphabetical")
+
+    click_link("Sort Alphabetical")
+    expect(@plant1.name).to appear_before(@plant2.name)
+  end
 end

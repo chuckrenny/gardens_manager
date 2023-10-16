@@ -10,7 +10,7 @@
 @garden3 = Garden.create!(name: "Butterfly", species: 100, watered: false)
 @garden4 = Garden.create!(name: "Wild", species: 200, watered: true)
 
-@plant1 = @garden1.plants.create!(name: "Blueberry Bush", height: 3, flowering: false)
+@plant1 = @garden1.plants.create!(name: "Blueberry Bush", height: 3, flowering: true)
 @plant2 = @garden1.plants.create!(name: "Tomatoes", height: 10, flowering: true)
 
 @plant3 = @garden2.plants.create!(name: "Raspberry Bush", height: 3, flowering: true)

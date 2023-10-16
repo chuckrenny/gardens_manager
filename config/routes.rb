@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get "/gardens/:id/plants", to: "garden_plants#index"
   get "/gardens/:id/plants/new", to: "garden_plants#new"
   post "/gardens/:id/plants", to: "garden_plants#create"
+  post "/gardens/:id/plants/alphabetize", to: "garden_plants#alphabetize"
 
   get "/plants", to: "plants#index"
   get "/plants/:id", to: "plants#show"
