@@ -148,7 +148,7 @@ And I click the button "Create Plant"
 Then a `POST` request is sent to '/gardens/:garden_id/plants',
 a new plant object/row is created for that Garden,
 and I am redirected to the Garden Plants Index page where I can see the new plant listed
-[ ] done
+[x] done
 
 User Story 14, Plant Update 
 
@@ -163,7 +163,7 @@ the plant's data is updated,
 and I am redirected to the Plant Show page where I see the Plant's updated information
 
 ActiveRecord
-[ ] done
+[x] done
 
 User Story 15, Plant Index only shows `true` Records 
 

@@ -9,14 +9,11 @@ RSpec.describe Plant, type: :feature do
   it "displays each plant and its attributes in the system" do
     visit "/plants"
 
-    expect(page).to have_content(@plant1.name)
-    expect(page).to have_content(@plant1.height)
-    expect(page).to have_content(@plant1.flowering)
     expect(page).to have_content(@plant2.name)
+    expect(page).to have_content(@plant2.height)
+    expect(page).to have_content(@plant2.flowering)
     expect(page).to have_content(@plant3.name)
     expect(page).to have_content(@plant4.name)
-    expect(page).to have_content(@plant5.name)
-    expect(page).to have_content(@plant6.name)
   end
 
   # US 9
@@ -28,5 +25,14 @@ RSpec.describe Plant, type: :feature do
     click_link("Gardens Index")
 
     expect(current_path).to eq("/gardens")
+  end
+
+  # US 15
+  it "only displays records that are true for flowering attribute(boolean column)" do
+    visit "/plants"
+
+    expect(page).to have_content("#{@plant2.name}")
+    expect(page).to have_content("#{@plant3.name}")
+    expect(page).to have_content("#{@plant4.name}")
   end
 end
