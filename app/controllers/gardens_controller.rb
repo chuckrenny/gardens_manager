@@ -11,10 +11,10 @@ class GardensController < ApplicationController
   end
 
   def create
-    Garden.create!(
+    Garden.create!({
       name: params[:name], 
       species: params[:species], 
-      watered: params[:watered])
+      watered: params[:watered]})
 
     redirect_to "/gardens"
   end

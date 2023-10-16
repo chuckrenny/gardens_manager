@@ -120,7 +120,7 @@ And I click the button "Create Garden" to submit the form
 Then a `POST` request is sent to the '/Gardens' route,
 a new Garden record is created,
 and I am redirected to the Garden Index page where I see the new Garden displayed.
-[ ] done
+[x] done
 
 User Story 12, Garden Update 
 
@@ -139,13 +139,13 @@ and I am redirected to the Garden's Show page where I see the Garden's updated i
 User Story 13, Garden Plant Creation 
 
 As a visitor
-When I visit a Garden Plantren Index page
+When I visit a Garden Plants Index page
 Then I see a link to add a new adoptable plant for that Garden "Create Plant"
 When I click the link
-I am taken to '/Gardens/:Garden_id/plant_table_name/new' where I see a form to add a new adoptable plant
+I am taken to '/Gardens/:Garden_id/plants/new' where I see a form to add a new adoptable plant
 When I fill in the form with the plant's attributes:
 And I click the button "Create Plant"
-Then a `POST` request is sent to '/Gardens/:Garden_id/plant_table_name',
+Then a `POST` request is sent to '/gardens/:garden_id/plants',
 a new plant object/row is created for that Garden,
 and I am redirected to the Garden Plants Index page where I can see the new plant listed
 [ ] done

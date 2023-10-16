@@ -20,4 +20,15 @@ RSpec.describe 'Garden Plants Index' do
     expect(page).to_not have_content("#{@garden2.name} Garden")
     expect(page).to_not have_content("#{@plant3.name}")
   end
+
+  # US 13
+  it "displays a link that redirects to a form to add a new adoptable plant" do
+    visit "/gardens/#{@garden1.id}/plants"
+
+    expect(page).to have_link("Create Plant")
+
+    click_link("Create Plant")
+
+    expect(current_path).to eq("/gardens/#{@garden1.id}/plants/new")
+  end
 end
