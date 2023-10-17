@@ -181,7 +181,7 @@ When I click on the link
 I'm taken back to the Garden's plants Index Page where I see all of the Garden's plants in alphabetical order
 
 Usability
-[ ] done
+[x] done
 
 User Story 17, Garden Update From Garden Index Page 
 
