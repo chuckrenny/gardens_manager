@@ -190,15 +190,15 @@ When I visit the Garden index page
 Next to every Garden, I see a link to edit that Garden's info
 When I click the link
 I should be taken to that Garden's edit page where I can update its information just like in User Story 12
-[ ] done
+[x] done
 
 User Story 18, Plant Update From Plants Index Page 
 
 As a visitor
-When I visit the `plant_table_name` index page or a Garden `plant_table_name` index page
+When I visit the `plants` index page or a Garden `plants` index page
 Next to every plant, I see a link to edit that plant's info
 When I click the link
-I should be taken to that `plant_table_name` edit page where I can update its information just like in User Story 14
+I should be taken to that `plants` edit page where I can update its information just like in User Story 14
 
 Iteration 3
 CRUD

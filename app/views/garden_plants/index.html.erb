@@ -5,7 +5,10 @@
 
 <h3>All Plants</h3>
 <% @plants.each do |plant| %>
-  <h4><%= plant.name %></h4>
-  <p>Height(inches): <%= plant.height %></p>
-  <p>Flowering: <%= plant.flowering %></p>
+  <section id="plant-<%= plant.id %>"></p>
+    <p><%= plant.name %></p>
+    <%= link_to "Edit Plant", "/plants/#{plant.id}/edit" %>
+    <p>Height(inches): <%= plant.height %></p>
+    <p>Flowering: <%= plant.flowering %></p>
+  </section>
 <% end %>

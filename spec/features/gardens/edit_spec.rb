@@ -2,11 +2,11 @@ require 'rails_helper'
 
 RSpec.describe Garden, type: :feature do
   describe "As a visitor" do
-    describe "when I visit gardens/:id/edit" do
+    describe "when I visit /gardens/:id/edit" do
       before :each do
         load_test_data
       end
-      
+
       # US 17
       it "displays a form to update the garden" do
         visit "/gardens"
