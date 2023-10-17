@@ -2,8 +2,12 @@
 
 <ul>
   <% @gardens.each do |garden| %>
-    <p class="garden-name"><%= garden.name %></p>
-    <small>Created at: <%= garden.created_at %></small><br>
-    </li>
+    <section id="garden-<%= garden.id %>"></p>
+      <p><%= garden.name %> Garden<p>
+      <%= link_to "Edit Garden", "/gardens/#{garden.id}/edit" %>
+      <small>Created at: <%= garden.created_at %></small><br>
+    </section>
   <% end %>
 </ul>
+
+<%= link_to "New Garden", "/gardens/new" %>

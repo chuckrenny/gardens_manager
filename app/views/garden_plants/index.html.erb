@@ -1,10 +1,14 @@
+<%= link_to "Create Plant", "/gardens/#{@garden.id}/plants/new" %>
+<%= link_to "Sort Alphabetical", "/gardens/#{@garden.id}/plants?sort=alphabetize" %>
+
 <h1><%= @garden.name %> Garden</h1>
 
 <h3>All Plants</h3>
 <% @plants.each do |plant| %>
-    <li class="plant-item">
-      <p class="plant-name"><%= plant.name %></p>
-      <p><strong>Height(inches):</strong> <%= plant.height %></p>
-      <p><strong>Flowering:</strong> <%= plant.flowering %></p>
-    </li>
+  <section id="plant-<%= plant.id %>"></p>
+    <p><%= plant.name %></p>
+    <%= link_to "Edit Plant", "/plants/#{plant.id}/edit" %>
+    <p>Height(inches): <%= plant.height %></p>
+    <p>Flowering: <%= plant.flowering %></p>
+  </section>
 <% end %>

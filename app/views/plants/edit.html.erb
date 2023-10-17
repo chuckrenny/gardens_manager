@@ -1,0 +1,10 @@
+<h1>Edit a Plant</h1>
+<%= form_with url: "/plants/#{@plant.id}", method: :patch, data: { turbo: false } do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :height %>
+  <%= form.number_field :height %>
+  <%= form.label :flowering %>
+  <%= form.check_box :flowering %>
+  <%= form.submit "Update Plant" %>
+<% end %>

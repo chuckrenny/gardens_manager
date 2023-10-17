@@ -96,7 +96,7 @@ User Story 9, Garden Index Link
 As a visitor
 When I visit any page on the site
 Then I see a link at the top of the page that takes me to the Garden Index
-[ ] done
+[x] done
 
 User Story 10, Garden Plant Index Link
 
@@ -106,7 +106,7 @@ Then I see a link to take me to that Garden's `plants` page ('/Gardens/:id/plant
 
 Iteration 2
 CRUD
-[ ] done
+[x] done
 
 User Story 11, Garden Creation 
 
@@ -120,7 +120,7 @@ And I click the button "Create Garden" to submit the form
 Then a `POST` request is sent to the '/Gardens' route,
 a new Garden record is created,
 and I am redirected to the Garden Index page where I see the new Garden displayed.
-[ ] done
+[x] done
 
 User Story 12, Garden Update 
 
@@ -134,21 +134,21 @@ And I click the button to submit the form
 Then a `PATCH` request is sent to '/Gardens/:id',
 the Garden's info is updated,
 and I am redirected to the Garden's Show page where I see the Garden's updated info
-[ ] done
+[x] done
 
 User Story 13, Garden Plant Creation 
 
 As a visitor
-When I visit a Garden Plantren Index page
+When I visit a Garden Plants Index page
 Then I see a link to add a new adoptable plant for that Garden "Create Plant"
 When I click the link
-I am taken to '/Gardens/:Garden_id/plant_table_name/new' where I see a form to add a new adoptable plant
+I am taken to '/Gardens/:Garden_id/plants/new' where I see a form to add a new adoptable plant
 When I fill in the form with the plant's attributes:
 And I click the button "Create Plant"
-Then a `POST` request is sent to '/Gardens/:Garden_id/plant_table_name',
+Then a `POST` request is sent to '/gardens/:garden_id/plants',
 a new plant object/row is created for that Garden,
 and I am redirected to the Garden Plants Index page where I can see the new plant listed
-[ ] done
+[x] done
 
 User Story 14, Plant Update 
 
@@ -163,25 +163,25 @@ the plant's data is updated,
 and I am redirected to the Plant Show page where I see the Plant's updated information
 
 ActiveRecord
-[ ] done
+[x] done
 
 User Story 15, Plant Index only shows `true` Records 
 
 As a visitor
 When I visit the plant index
 Then I only see records where the boolean column is `true`
-[ ] done
+[x] done
 
-User Story 16, Sort Garden's Plantren in Alphabetical Order by name 
+User Story 16, Sort Garden's Plants in Alphabetical Order by name 
 
 As a visitor
-When I visit the Garden's plantren Index Page
-Then I see a link to sort plantren in alphabetical order
+When I visit the Garden's plants Index Page
+Then I see a link to sort plants in alphabetical order
 When I click on the link
-I'm taken back to the Garden's plantren Index Page where I see all of the Garden's plantren in alphabetical order
+I'm taken back to the Garden's plants Index Page where I see all of the Garden's plants in alphabetical order
 
 Usability
-[ ] done
+[x] done
 
 User Story 17, Garden Update From Garden Index Page 
 
@@ -190,15 +190,15 @@ When I visit the Garden index page
 Next to every Garden, I see a link to edit that Garden's info
 When I click the link
 I should be taken to that Garden's edit page where I can update its information just like in User Story 12
-[ ] done
+[x] done
 
 User Story 18, Plant Update From Plants Index Page 
 
 As a visitor
-When I visit the `plant_table_name` index page or a Garden `plant_table_name` index page
+When I visit the `plants` index page or a Garden `plants` index page
 Next to every plant, I see a link to edit that plant's info
 When I click the link
-I should be taken to that `plant_table_name` edit page where I can update its information just like in User Story 14
+I should be taken to that `plants` edit page where I can update its information just like in User Story 14
 
 Iteration 3
 CRUD

@@ -24,7 +24,6 @@ RSpec.describe Garden, type: :feature do
     expect(@garden2.name).to appear_before(@garden1.name)
     expect(@garden1.name).to_not appear_before(@garden4.name)
   end
-
   
   # US 8
   it "displays a link header and when clicked it redirects to the Plants Index Page" do 
@@ -35,5 +34,26 @@ RSpec.describe Garden, type: :feature do
     click_link("Plants Index")
 
     expect(current_path).to eq("/plants")
+  end
+
+  # US 11
+  it "displays a link to create a new Garden record called 'New Garden' and redirects to a form to create a new Garden" do
+    visit "/gardens"
+
+    expect(page).to have_link("New Garden")
+
+    click_link("New Garden")
+
+    expect(current_path).to eq("/gardens/new")
+    expect(page).to have_content("Create a New Garden")
+
+    fill_in 'Name', with: 'Babylon'
+    fill_in 'Species', with: 1000
+    check 'Watered'
+
+    click_on 'Submit'
+
+    expect(current_path).to eq("/gardens")
+    expect(page).to have_content('Babylon')
   end
 end

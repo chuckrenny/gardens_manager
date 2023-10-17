@@ -33,4 +33,25 @@ RSpec.describe Garden, type: :feature do
     expect(page).to have_content("#{@garden1.name} Garden")
     expect(page).to have_content("All Plants")
   end
+
+  # US 12
+  it "displays a link 'Update Garden' to a form to edit the Garden's attributes" do
+    visit "/gardens/#{@garden1.id}"
+
+    expect(page).to have_link("Update Garden")
+
+    click_link("Update Garden")
+
+    expect(current_path).to eq("/gardens/#{@garden1.id}/edit")
+
+    fill_in "Name", with: "Eden 2.0"
+    fill_in "Species", with: "0"
+    uncheck "Watered"
+    click_on "Update Garden"
+
+    expect(current_path).to eq("/gardens/#{@garden1.id}")
+    expect(page).to have_content("Eden 2.0 Garden")
+    expect(page).to have_content("Total Species: 0")
+    expect(page).to have_content("Recently Watered: false")
+  end
 end
